@@ -1,0 +1,102 @@
+:root{
+  --cor-fundo: #174fd1;
+  --cor-card: #182d4f;
+  --cor-primaria: #38bdf8;
+  --cor-secundaria: #9333ea;
+  --cor-texto: #ffffff;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg, var(--cor-fundo), #111827);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  width: 900px;
+  background-color: var(--cor-card);
+  border-radius: 20px;
+  padding: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.conteudo{
+  flex: 1;
+  color: var(--cor-texto);
+}
+
+.titulo{
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: var(--cor-primaria);
+}
+
+.descricao{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.botoes{
+  display: flex;
+  gap: 15px;
+}
+
+.btn{
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn-comprar{
+  background-color: var(--cor-primaria);
+  color: black;
+}
+
+.btn-detalhes{
+  background-color: var(--cor-secundaria);
+  color: white;
+}
+
+.btn:hover{
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+.imagem{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.imagem img{
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+}
+@media(max-width: 768px){
+  .card{
+    flex-direction: column;
+    text-align: center;
+  }
+  .botoes{
+    justify-content: center;
+  }
+}
