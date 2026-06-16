@@ -1,0 +1,28 @@
+button{
+
+    padding: 15px 30px;
+    font-size: 18px;
+    color: aqua;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    animation: moverbotao 4s infinite;
+}
+
+@keyframes moverbotao{
+0%{
+    left:0;
+    background-color:blue;
+
+
+}
+50%{
+     left: 300px;
+     background-color: blueviolet;
+
+}
+
+
+
+}
