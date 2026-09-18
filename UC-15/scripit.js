@@ -6,3 +6,12 @@ function mudarTexto() {
 function MudaCor() {
     document.getElementByid("mensagem").style.color = "blue";
 }
+
+
+
+
+function mostrarNome() {
+    let nome = document.getElementByid("nome").value;
+
+    document.getElementById("resultado").textContent = "olá," + nome + "!";
+}
